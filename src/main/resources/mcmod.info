@@ -1,0 +1,16 @@
+[
+{
+  "modid": "fluidsand",
+  "name": "FluidSand",
+  "description": "Makes sand and gravel into fluids!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Viliml"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
