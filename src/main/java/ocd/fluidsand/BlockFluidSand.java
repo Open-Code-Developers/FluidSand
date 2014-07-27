@@ -31,13 +31,15 @@ public class BlockFluidSand extends BlockFluidFinite
 		setBlockName(fluidName);
 		setBlockTextureName("fluidsand:" + fluidName);
 	}
-
+	
+	@SideOnly(Side.CLIENT)
 	@Override
 	public IIcon getIcon(int side, int meta)
 	{
 		return side < 2 ? icons[0] : icons[1];
 	}
-
+	
+	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerBlockIcons(IIconRegister register)
 	{
@@ -53,7 +55,8 @@ public class BlockFluidSand extends BlockFluidFinite
 	{
 		return true;
 	}
-
+	
+	//TODO workaround, remove when forge fixes the vanilla hardcode
 	@Override
 	public void updateTick(World world, int x, int y, int z, Random rand)
 	{
